@@ -7,7 +7,7 @@ Use GamepadViewer's Custom CSS URL field (not Edit CSS URL).
 .controller.custom {
   width: 1536px;
   height: 1024px;
-  background: transparent url("ART_URL") no-repeat 0 0;
+  background: transparent url(https://raw.githubusercontent.com/madshaakonsen04-ctrl/CONTROLL/refs/heads/main/ezzclutch_controller_art.png) no-repeat 0 0;
   background-size: 100% 100%;
   position: relative;
 }
