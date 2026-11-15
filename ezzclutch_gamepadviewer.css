@@ -1,0 +1,85 @@
+/*
+EzzClutch / Rocket League - Gamepad Viewer starter skin
+Upload BOTH this CSS file and ezzclutch_controller_art.png to a public host.
+Then replace ART_URL below with the direct public PNG URL.
+Use GamepadViewer's Custom CSS URL field (not Edit CSS URL).
+*/
+.controller.custom {
+  width: 1536px;
+  height: 1024px;
+  background: transparent url("ART_URL") no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+}
+.custom.disconnected div { display: none; }
+
+/* Live sticks */
+.custom .sticks {
+  position: absolute; left: 245px; top: 185px;
+  width: 890px; height: 450px;
+}
+.custom .stick {
+  position: absolute; width: 220px; height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 45%, #292039 0 48%, #a94cff 52%, #210b42 63%, #080510 70%);
+  box-shadow: 0 0 18px #a000ff;
+}
+.custom .stick.left { left: 0; top: 0; }
+.custom .stick.right { left: 775px; top: 210px; }
+.custom .stick.pressed { filter: brightness(1.7); }
+
+/* Face buttons */
+.custom .abxy {
+  position: absolute; left: 995px; top: 155px;
+  width: 360px; height: 360px;
+}
+.custom .button {
+  position: absolute; width: 125px; height: 125px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #180b2d 0 55%, #a63cff 60%, #080510 72%);
+  color: #d9a5ff; box-shadow: 0 0 14px #a000ff;
+}
+.custom .button.pressed { filter: brightness(2); }
+.custom .y { left: 95px; top: 0; }
+.custom .x { left: 0; top: 105px; }
+.custom .b { left: 205px; top: 105px; }
+.custom .a { left: 95px; top: 210px; }
+
+/* D-pad */
+.custom .dpad {
+  position: absolute; left: 405px; top: 420px;
+  width: 275px; height: 240px;
+}
+.custom .face { position: absolute; background: #24103d; box-shadow: 0 0 12px #a000ff; }
+.custom .face.up, .custom .face.down { width: 95px; height: 105px; left: 90px; }
+.custom .face.up { top: 0; }
+.custom .face.down { bottom: 0; }
+.custom .face.left, .custom .face.right { width: 105px; height: 95px; top: 72px; }
+.custom .face.left { left: 0; }
+.custom .face.right { right: 0; }
+.custom .face.pressed { background: #c46aff; }
+
+/* Menu / view buttons */
+.custom .arrows {
+  position: absolute; left: 590px; top: 270px;
+  width: 355px; height: 95px;
+}
+.custom .back, .custom .start {
+  width: 110px; height: 85px; border-radius: 30px;
+  background: #211039; box-shadow: 0 0 12px #a000ff;
+}
+.custom .back { float: left; }
+.custom .start { float: right; }
+.custom .back.pressed, .custom .start.pressed { background: #b64cff; }
+
+/* Trigger and bumper indicators */
+.custom .triggers { position: absolute; left: 170px; top: 0; width: 1190px; height: 70px; }
+.custom .trigger { width: 300px; height: 65px; background: #a83cff; opacity: 0; }
+.custom .trigger.left { float: left; }
+.custom .trigger.right { float: right; }
+.custom .trigger.pressed { opacity: .8; }
+.custom .bumpers { position: absolute; left: 170px; top: 65px; width: 1190px; height: 45px; }
+.custom .bumper { width: 300px; height: 40px; background: #c46aff; opacity: 0; }
+.custom .bumper.left { float: left; }
+.custom .bumper.right { float: right; }
+.custom .bumper.pressed { opacity: 1; }
